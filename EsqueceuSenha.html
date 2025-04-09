@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a Senha</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action="index.html" method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="redirect()">Enviar Link de Redefinição</button>
+        </form>
+    </div>
+    <script>
+
+        function redirect() {
+            window.location.href = "codigo.html";
+        }
+    </script>
+</body>
+</html>
